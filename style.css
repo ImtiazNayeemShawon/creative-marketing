@@ -1,0 +1,142 @@
+body{
+background-color:#20364b ;
+margin: 10px;
+padding: auto;
+}
+.header{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+grid-template-rows: repeat(auto-fit);
+}
+.header .nav a{
+color: #f1fdff;
+text-decoration: none;
+margin: 20px;
+font-family: sans-serif;
+text-transform: uppercase;
+
+}
+.nav i{
+background-color: #fdc11f;
+padding: 15px;
+border-radius: 50%;
+border: solid 5px #70683b;
+}
+
+.nav a:hover{
+  text-decoration: underline yellowgreen 2px;
+  transition: 1s;
+}
+.header {
+margin-left: 50px;
+margin-top: 50px;
+}
+.intro .text-side h1{
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+ color: white;
+ font-size: 50px;
+ font-weight: 2000;
+}
+.text-side h1::first-line{
+color: #fdc11f;                     
+}
+.intro .img-side img{
+width: 550px;
+}
+.intro{
+margin-top: 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+grid-template-rows: repeat(auto);
+grid-gap: 50px;
+}
+.text-side p{
+color: white;
+font-family: sans-serif;
+line-height: 30px;
+font-size: 17px;
+max-width: 600px;
+}
+.text-side input{
+padding-top: 20px;
+padding-bottom: 20px;
+padding-right: 300px;
+border-radius: 50px;
+border: none;
+color: #7b7b7b;
+background-color: #ffffff;
+margin-top: 20px;
+font-family: sans-serif;
+font-size: 20px;
+text-align: center;
+}
+.text-side{
+margin-left: 100px;
+}
+.text-side button {
+background-color: yellowgreen;
+color: white;
+padding-right: 40px;
+padding-left: 40px;
+padding-top: 12px;
+padding-bottom: 12px;
+border-radius: 50px;
+border: none;
+margin-top: 15px;
+margin-left: 30px;
+font-size: 20px;
+font-family: sans-serif;
+
+}
+.img-side img{
+box-shadow: 50px 50px #fdc11f;
+border-radius: 700px 200px 500px;
+}
+ @media  (max-width:768px) {
+           .header .nav{
+         font-size: 10px;
+         margin-top: 15px;
+           }       
+           .nav i{
+           margin-left: 160px;
+           margin-top: 50px;
+
+           } 
+           .nav a{
+  margin-left: 2px;
+           }  
+           .header .logo img{
+          margin-left: 120px;
+          
+           }
+
+           .intro .text-side h1{
+            font-size: 30px;
+            text-align: center;
+           }
+           .intro .text-side p{
+           font-size: 10px;
+           text-align: center;
+           
+           }
+           .text-side input{
+          width: 50px;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          margin-left: 0px;
+           }
+           .text-side{
+margin-left: 2px;
+           }
+           .text-side button{
+             text-align: center;
+             margin-left: 115px;
+           }
+           .img-side img{
+              max-width: 300px;
+              height: 400px;
+           }
+           .img-side{
+            max-width: 200px;
+           }
+ }
